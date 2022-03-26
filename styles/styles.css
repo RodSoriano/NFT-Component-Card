@@ -1,11 +1,92 @@
 :root
-{
-    --color-primario:   hsl(215, 51%, 70%);
-    --color-secundario: hsl(175, 100%, 50%);
-    --color-tres:       hsl(217, 54%, 11%);
-    --color-cuatro:     hsl(216, 50%, 16%);
-    --color-cinco:      hsl(215, 32%, 27%);
-    --color-seis:       hsl(0, 0%, 100%);
-    --font-size:18px;
-    --font-primary: 'Outfit' , sans-serif;
-}
+    {
+        --color-primario:   hsl(215, 51%, 70%);
+        --color-secundario: hsl(175, 100%, 50%);
+        --color-tres:       hsl(217, 54%, 11%);
+        --color-cuatro:     hsl(216, 50%, 16%);
+        --color-cinco:      hsl(215, 32%, 27%);
+        --color-seis:       hsl(0, 0%, 100%);
+        --font-size:18px;
+        --font-primary: 'Outfit' , sans-serif;
+    }
+
+*
+    {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    } 
+
+body
+    {
+        background-color: var(--color-tres);
+        font-family: var(--font-primary);
+    }
+
+.wrap
+    {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+main
+    {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        background-color: var(--color-cuatro);
+        padding-top: 20px;
+        border-radius: 15px;
+        margin: 20px 0px;
+    }
+
+.container
+    {
+        width: 85%;
+    }
+    
+.container .imgContainer img
+    {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+h1
+    {
+        margin: 20px 0px;
+        color: var(--color-seis);
+        font-size: 21px; 
+    }
+
+.container > p  
+    {
+        color: var(--color-primario);
+        font-weight: 300;
+        margin-bottom: 20px;
+
+    }
+
+.price
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--color-cinco);
+    }
+
+.price .eth
+    {
+        color: var(--color-secundario);
+        font-weight: 600;
+    }
+
+.daysLeft
+    {
+        color: var(--color-primario);
+        font-weight: 600;
+
+    }
+
