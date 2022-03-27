@@ -29,17 +29,19 @@ body
         min-height: 100vh;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
 main
     {
         width: 85%;
+        max-width: 318 75px;
         display: flex;
         justify-content: center;
         background-color: var(--color-cuatro);
         padding-top: 20px;
         border-radius: 15px;
-        margin: 20px 0px;
+        margin: 20px 0px; 
     }
 
 .container
@@ -73,9 +75,21 @@ h1
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding-bottom: 10px;
+        padding-bottom: 16px;
         border-bottom: 1px solid var(--color-cinco);
     }
+
+.price .left , .price .right
+{
+    width: 50%;
+    display: flex;
+
+}
+
+.price .right
+{
+    justify-content: flex-end;
+}
 
 .price .eth
     {
@@ -86,7 +100,44 @@ h1
 .daysLeft
     {
         color: var(--color-primario);
-        font-weight: 600;
-
+        font-weight: 400;
     }
 
+.price .eth , .price .daysLeft
+{
+    margin-left: 7px;
+}
+
+.user
+{
+    padding: 16px 0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user .imgContainer
+{
+    border-radius: 50%;
+    border: 1px solid var(--color-seis);
+    width: 30px;
+    height: 30px; 
+
+}
+
+.user .imgContainer img
+{
+    width: 100%;
+}
+
+.user p
+{
+    color: var(--color-primario);
+    margin-left: 15px;
+    font-weight: 300;
+}
+
+.user p .name
+{
+    color: var(--color-seis);
+}
